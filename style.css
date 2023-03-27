@@ -76,7 +76,7 @@ html {
 }
 
 #content {
-    background: url(/images/space-dark-wallpaper-preview.jpg) top center / cover repeat;
+    background: url(./images/space-dark-wallpaper-preview.jpg) top center / cover repeat;
     margin-top: 0;
 }
 
