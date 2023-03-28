@@ -28,7 +28,17 @@ html {
     background-color: #232121;
     z-index: 4;
 }
-
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-between;
+    overflow: auto;
+}
+#logo{
+    margin-left: 5px;
+    position: relative;
+    margin-top: 5px;
+}
 .navigation_list {
     list-style-type: none;
     display: flex;
@@ -39,7 +49,7 @@ html {
     position: relative;
 }
 
-.navigation_list li a {
+.navigation_link_list {
     color: #fff;
     text-decoration: none;
     line-height: 46px;
