@@ -13,11 +13,12 @@ function displayContent(initiator) {
     for (const element of others) {
         if (element.id !== initiator.parentElement.id) {
             element.getElementsByClassName("hidden-content")[0].style.display = "none";
+            element.getElementsByClassName("showmorebutton")[0].style.display = "";
         }
     }
 }
 
 function hideContent(initiator) {
     initiator.parentElement.style.display = "none";
-    initiator.parentElement.parentElement.getElementsByClassName("showmorebutton")[0].style.display = ""
+    initiator.parentElement.parentElement.getElementsByClassName("showmorebutton")[0].style.display = "";
 }
