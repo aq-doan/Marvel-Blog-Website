@@ -8,7 +8,9 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+.main{
+    position: relative;
+}
 .img-header {
     position: fixed;
     width: 100%;
@@ -39,6 +41,11 @@ nav{
     position: relative;
     margin-top: 5px;
 }
+#navigation_header{
+    position: relative;
+    width: 500px;
+    height: 470px;
+}
 .navigation_list {
     list-style-type: none;
     display: flex;
@@ -65,8 +72,7 @@ nav{
 
 #home-header {
     position: relative;
-    margin-top: 46px;
-    padding-top: 50%;
+    
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -84,8 +90,6 @@ nav{
 #home-header .text-description {
     font-style: italic;
 }
-
-
 
 #content .content-section {
     width: 1000px;
