@@ -38,6 +38,7 @@ nav{
     margin-left: 5px;
     position: relative;
     margin-top: 5px;
+    margin-right:5px ;
 }
 #navigation_header{
     position: relative;
@@ -47,12 +48,20 @@ nav{
 .navigation_list {
     list-style-type: none;
     display: flex;
+    text-decoration: none;
 }
 
 .navigation_list li {
     display: inline-block;
     position: relative;
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    text-transform: uppercase;
 }
+
 
 .navigation_link_list {
     color: #fff;
@@ -62,12 +71,22 @@ nav{
     display: inline-block;
     text-transform: uppercase;
 }
-
-.navigation_list li:hover a {
+.nav a.active{
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.navigation_list li:hover a{
     color: #000;
     background-color: #ccc;
 }
-
+.btn:hover{
+    background-color: #666;
+    color: white;
+  }
 #home-header {
     position: relative;
     
@@ -169,6 +188,14 @@ nav{
     position: absolute;
     left:30px; 
     top: 100px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+
 }
 #login_text_input_id {
     width: 30%; 
