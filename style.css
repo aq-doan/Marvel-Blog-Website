@@ -187,6 +187,9 @@ nav{
     width: 150%; 
     height: 300px;
 }
+.login_button{
+    text-decoration: none;
+}
 .LoginFormDiv{
     position: absolute;
     left:30px; 

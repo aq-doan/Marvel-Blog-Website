@@ -10,7 +10,7 @@
     <script type="text/javascript" src="JavaScript.js" defer></script>
 </head>
 
-
+<body>
 <!-- Header -->
 <header class="header" id="navigation_header">
 
@@ -41,12 +41,13 @@
                         <a href="./login.html" class="active_navigation_link">Login</a>
                     </li>
                     <li class="navigation_li">
-                        <a href="./register.html" class="navigation_link_list" id>Register</a>
+                        <a href="./register.html" class="navigation_link_list" >Register</a>
                     </li>
                 </ul>
             </div>
+        </nav>
     </div>
-    </nav>
+    
 </header>
 
 <!--  LOGIN FORM  -->
@@ -70,8 +71,7 @@
                 <td><button type="submit" class="login_button" style="width: 80px;">
                         <span style="text-overflow:ellipsis;">Login</span></button></td>
 
-                <td><button type="button" class="cancel_button" style="width: 80px;">
-                        <span style="text-overflow:ellipsis;">Cancel</span></button></td>
+                <td><a href="index.html" class="login_button"> Cancel/Back</a></td>
             </tr>
             <tr>
                 <td><label>
@@ -82,96 +82,14 @@
                 <td><span style="background-color: white;"><a href="#">Forgot Password?</a></span></td>
             </tr>
         </table>
-</div>
-</form>
-
-<!-- Footer -->
-<footer class="footer section" style="position:relative; top:600px;">
-
-    <div class="footer-container container d-grid">
-
-        <div class="company-data">
-            <a href="./index.html">
-                <h2 class="logo">GROUP 3</h2>
-            </a>
-            <p class="company-description">He watched as the young man tried to impress everyone in the room with his
-                intelligence. There was no doubt that he was
-                smart. The fact that he was more intelligent than anyone else in the room could have been easily
-                deduced, but nobody was
-                really paying any attention due to the fact that it was also obvious that the young man only cared about
-                his
-                intelligence.</p>
-
-            <span class="copyright-notice">&copy;2022 Group 3 . All rights reserved.</span>
-        </div>
-
-        <div>
-            <h6 class="title footer-title">Units</h6>
-
-            <ul class="footer-list list">
-                <li class="list-item">
-                    <a href="blogkit202.html" class="list-link">KIT202</a>
-                </li>
-                <li class="list-item">
-                    <a href="blogKIT203.html" class="list-link">KIT203</a>
-                </li>
-                <li class="list-item">
-                    <a href="blogKIT107.html" class="list-link">KIT107</a>
-                </li>
-                <li class="list-item">
-                    <a href="blogKIT206.html" class="list-link">KIT206</a>
-                </li>
-                <li class="list-item">
-                    <a href="blogKIT101.html" class="list-link">KIT101</a>
-                </li>
-            </ul>
-
-        </div>
-
-        <div>
-            <h6 class="title footer-title">Useful Links</h6>
-
-            <ul class="footer-list list">
-                <li class="list-item">
-                    <a href="#" class="list-link">Home</a>
-                </li>
-                <li class="list-item">
-                    <a href="./uni_info.html" class="list-link">University Information</a>
-                </li>
-                <li class="list-item">
-                    <a href="#" class="list-link">Students</a>
-                </li>
-                <li class="list-item">
-                    <a href="#" class="list-link">Membership</a>
-                </li>
-            </ul>
-
-        </div>
-
-        <div>
-            <h6 class="title footer-title">Company</h6>
-
-            <ul class="footer-list list">
-                <li class="list-item">
-                    <a href="#" class="list-link">Contact us</a>
-                </li>
-                <li class="list-item">
-                    <a href="#" class="list-link">F.A.Q</a>
-                </li>
-                <li class="list-item">
-                    <a href="#" class="list-link">Careers</a>
-                </li>
-                <li class="list-item">
-                    <a href="#" class="list-link">Authors</a>
-                </li>
-                <li class="list-item">
-                    <a href="#" class="list-link">Memberships</a>
-                </li>
-            </ul>
-
-        </div>
+    </form>
+    <!-- Footer -->
+    <div id="footer">
+        <footer>KIT202 Web Programming | Assignment 1</footer>
     </div>
-</footer>
+</div>
+
+
 </body>
 
 <button onclick="toTop()" id="toTopButton">To Top</button>
