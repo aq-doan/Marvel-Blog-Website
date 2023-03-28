@@ -16,7 +16,7 @@
 
     <!-- Site navigation  -->
 
-    <div id="container">
+    <div id="container_nav_header">
         <nav class="navbar container" style="position: relative;">
 
             <!-- Site navigation  -->
@@ -50,33 +50,37 @@
 </header>
 
 <!--  LOGIN FORM  -->
-<div class="containerLogin">
-    <form name="loginForm" id="loginFormID" onsubmit="return validateForm()" method="post">
+<div class="LoginFormDiv">
+    <form  id="loginFormID" onsubmit="return validateForm()" method="post">
         <h1>LOGIN</h1>
 
         <table>
             <tr>
-            <td><label for="uname"><b>Email</b></label></td>
-            <td><input id="login_text_input_id" type="textLogin" placeholder="Email Address" name="uname" style="width: 180px;" required></td>
+                <td><label for="login_text_input_id"><b>Email</b></label></td>
+                <td><input id="login_text_input_id" type="textLogin" placeholder="Email Address" name="uname"
+                        style="width: 180px;" required></td>
             </tr>
 
             <tr>
-                <td><label for="psw"><b>Password</b></label></td>
-                    <td><input type="password" placeholder="Enter Password" name="psw" style="width: 180px;" required></td>
+                <td><label for="password_login"><b>Password</b></label></td>
+                <td><input id="password_login" type="password" placeholder="Enter Password" name="psw"
+                        style="width: 180px;" required></td>
             </tr>
             <tr>
                 <td><button type="submit" class="login_button" style="width: 80px;">
-                <span style="text-overflow:ellipsis;">Login</button></td>
+                        <span style="text-overflow:ellipsis;">Login</span></button></td>
 
-                    <td><button type="button" class="cancel_button" style="width: 80px;">
-                <span style="text-overflow:ellipsis;">Cancel</button></td>
-                </tr>
+                <td><button type="button" class="cancel_button" style="width: 80px;">
+                        <span style="text-overflow:ellipsis;">Cancel</span></button></td>
+            </tr>
             <tr>
-            <td><label>
-                <input type="checkbox" checked="checked" name="remember">Remember me
-            </label></td><tr>
+                <td><label>
+                        <input type="checkbox" checked="checked" name="remember">Remember me</label>
+                </td>
+            <tr>
 
-                <td><span class="psw" style="background-color: #f1f1f1;"><a href="#">Forgot Password?</a></span></td></tr>
+                <td><span style="background-color: white;"><a href="#">Forgot Password?</a></span></td>
+            </tr>
         </table>
 </div>
 </form>
