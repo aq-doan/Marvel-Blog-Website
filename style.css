@@ -178,6 +178,10 @@ nav{
     width: 100%;
 }
 /*Login Form*/
+#logo{
+    width:40px;
+    height:40px;
+}
 #loginFormID {
     position: relative; 
     width: 150%; 
