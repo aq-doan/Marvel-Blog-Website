@@ -1,52 +1,127 @@
 <!DOCTYPE html>
-<html = "en">
-    <head>
-        <meta charset="UTF-8">
-        <title>KIT202 MARVEL BlOG | Login page</title>
-        <meta name = "author" content = "Anh Quan Doan, Johnathan Charleston, Van Duc Anh Nguyen, Quang Khai Tran">
-        <link rel="stylesheet" href="./style.css"/>
-    </head>
-    
-    
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KIT202 MARVEL BlOG | Login page</title>
+    <meta name="author" content="Anh Quan Doan, Johnathan Charleston, Van Duc Anh Nguyen, Quang Khai Tran">
+    <link rel="stylesheet" href="./style.css"/>
+    <script type="text/javascript" src="JavaScript.js"></script>
+</head>
+
+<div class="main">
+    <!-- Header -->
     <!-- Header -->
     <header class="header" id="navigation_header">
-    
+
         <!-- Site navigation  -->
-        <nav class="navbar container" style="position: relative;">
-    
-            <!-- Site navigation  -->
-            <div class="navigation" id="menu">
-                <ul class="navigation_list">
-                    <li class="navigation_li">
-                        <img src="./images/MarvelLogo.png" width="60px" height="35px" id = "logo" alt="logoIMG"/>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./index.html" class="navigation_link_list">Home</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./archive.html" class="active" style="text-decoration: none;">Archive</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./create.html" class="navigation_link_list">Create Post</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./about.html" class="navigation_link_list">About Us</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./login.html" class="navigation_link_list">Login</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./register.html" class="navigation_link_list">Register</a>
-                    </li>
-                </ul>
-            </div>
-            </div>
+        <img class="img-header" src="./images/wp2068895.jpg" alt="">
+        <div id="container">
+            <nav class="navbar container" style="position: relative;">
+
+                <!-- Site navigation  -->
+                <div class="navigation" id="menu">
+                    <ul class="navigation_list">
+                        <li class="navigation_li">
+                            <img src="./images/MarvelLogo.png" width="60px" height="35px" id="logo" alt="logoIMG" />
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./index.html" class="navigation_link_list">Home</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./archive.html" class="active" style="text-decoration: none;">Archive</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./create.html" class="navigation_link_list">Create Post</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./about.html" class="navigation_link_list">About Us</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./login.html" class="navigation_link_list">Login</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./register.html" class="navigation_link_list">Register</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
         </nav>
     </header>
-    <!-- Body -->
+
     <body>
-        <div class="content">
-            <div class="posts">
+        <!--Header-->
+        <div id="home-header">
+            <div class="text-content">
+                <h1 class="text-heading">Marvel blog archive</h1>
+                <div class="text-description">My world, my stories.</div>
+            </div>
+        </div>
+        <!-- Body -->
+        <div id="content">
+            <div class="content-section" id="archived-blog-1">
+                <h2 class="post-title">Early Days</h2>
+                <p class="post-date">07/10/2021</p>
+                <p class="post-tag">#Heroes #Old</p>
+                <div class="hidden-content" ID="hidden-content">
+                    <p class="post-content">
+                        Pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices
+                        neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis
+                        nisl
+                        rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero
+                        enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu
+                        cursus
+                        euismod quis viverra
+                        nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu
+                        felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut
+                        placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc
+                        scelerisque
+                        viverra mauris in aliquam sem fringilla ut morbi tincidunt
+                        augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis
+                        tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus
+                        vestibulum sed arcu non odio euismod
+                        lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit
+                        aliquam
+                        etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus urna duis convallis
+                        convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque
+                        sodales ut etiam sit.
+                    </p>
+                    <button onclick="hideContent(this)">Show Less</button>
+                </div>
+                <button class="showmorebutton" onclick="displayContent(this)">Show More</button>
+            </div>
+            <div class="content-section" id="archived-blog-2">
+                <h2 class="post-title">The X Men</h2>
+                <p class="post-date">25/07/2021</p>
+                <p class="post-tag">#Heroes #Old</p>
+                <div class="hidden-content" ID="hidden-content">
+                    <p class="post-content">
+                        Pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices
+                        neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis
+                        nisl
+                        rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero
+                        enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu
+                        cursus
+                        euismod quis viverra
+                        nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu
+                        felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut
+                        placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc
+                        scelerisque
+                        viverra mauris in aliquam sem fringilla ut morbi tincidunt
+                        augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis
+                        tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus
+                        vestibulum sed arcu non odio euismod
+                        lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit
+                        aliquam
+                        etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus urna duis convallis
+                        convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque
+                        sodales ut etiam sit.
+                    </p>
+                    <button onclick="hideContent(this)">Show Less</button>
+                </div>
+                <button class="showmorebutton" onclick="displayContent(this)">Show More</button>
+            </div>
+            <div class="content-section" id="archived-blog-3">
                 <!-- Posts in the archive should not also be on the main menu (easy-ish, since it's all hardcoded) -->
                 <!-- A minumum of 5 posts should be included (they will be hardcoded at first. we haven't started on database stuff yet) -->
                 <!-- Archived posts should be listed in reverse chronological order (newest first) -->
@@ -58,62 +133,116 @@
                        Clicking this link/button should cause the post content to be displayed beneath, which you can achieve using CSS
                        and JavaScript (and animation too if you choose). Another link/button should be provided to hide the content.-->
                 <!-- The content requirements for each archived post is as described for the home page-->
-                <div class="archiveElement">
-                    <div class="postHead">
-                        <h2>Post Title 1</h2>
-                        <p>Post Creation Date 1</p>
-                        <p>Post Creator Username 1</p>
+                <h2 class="post-title">The Old Guard</h2>
+                <p class="post-date">12/05/2021</p>
+                <p class="post-tag">#Heroes #Old</p>
+                <div class="hidden-content" ID="hidden-content">
+                    <p class="post-content">
+                        Pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices
+                        neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis
+                        nisl
+                        rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero
+                        enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu
+                        cursus
+                        euismod quis viverra
+                        nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu
+                        felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut
+                        placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc
+                        scelerisque
+                        viverra mauris in aliquam sem fringilla ut morbi tincidunt
+                        augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis
+                        tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus
+                        vestibulum sed arcu non odio euismod
+                        lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit
+                        aliquam
+                        etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus urna duis convallis
+                        convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque
+                        sodales ut etiam sit.
+                    </p>
+
+                    <div class="heroes-list">
+                        <div class="heroes-item">
+                            <p class="heroes-name">Iron Man</p>
+                            <img src="/images/ironman.jpg" alt="">
+                        </div>
+                        <div class="heroes-item">
+                            <p class="heroes-name">Captain America</p>
+                            <img src="/images/captainamerica.jpg" alt="">
+                        </div>
+                        <div class="heroes-item">
+                            <p class="heroes-name">Hulk</p>
+                            <img src="/images/hulk.jpg" alt="">
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="postContent">
-                        <p>Post Content 1</p>
-                        <p class="tags">#tag1-1 #tag1-2</p>
-                    </div>
+                    <button onclick="hideContent(this)">Show Less</button>
                 </div>
-                <div class="archiveElement">
-                    <div class="postHead">
-                        <h2>Post Title 2</h2>
-                        <p>Post Creation Date 2</p>
-                        <p>Post Creator Username 2</p>
-                    </div>
-                    <div class="postContent">
-                        <p>Post Content 2</p>
-                        <p class="tags">#tag2-1 #tag2-2</p>
-                    </div>
+                <button class="showmorebutton" onclick="displayContent(this)">Show More</button>
+            </div>
+            <div class="content-section" id="archived-blog-4">
+                <h2 class="post-title">The Powers</h2>
+                <p class="post-date">18/01/2021</p>
+                <p class="post-tag">#Heroes #Old</p>
+                <div class="hidden-content" ID="hidden-content">
+                    <p class="post-content">
+                        Pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices
+                        neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis
+                        nisl
+                        rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero
+                        enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu
+                        cursus
+                        euismod quis viverra
+                        nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu
+                        felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut
+                        placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc
+                        scelerisque
+                        viverra mauris in aliquam sem fringilla ut morbi tincidunt
+                        augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis
+                        tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus
+                        vestibulum sed arcu non odio euismod
+                        lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit
+                        aliquam
+                        etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus urna duis convallis
+                        convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque
+                        sodales ut etiam sit.
+                    </p>
+                    <button onclick="hideContent(this)">Show Less</button>
                 </div>
-                <div class="archiveElement">
-                    <div class="postHead">
-                        <h2>Post Title 3</h2>
-                        <p>Post Creation Date 3</p>
-                        <p>Post Creator Username 3</p>
-                    </div>
-                    <div class="postContent">
-                        <p>Post Content 3</p>
-                        <p class="tags">#tag3-1 #tag3-2</p>
-                    </div>
+                <button class="showmorebutton" onclick="displayContent(this)">Show More</button>
+            </div>
+            <div class="content-section" id="archived-blog-5">
+                <h2 class="post-title">First Post</h2>
+                <p class="post-date">15/11/2020</p>
+                <p class="post-tag">#Posting</p>
+                <div class="hidden-content" ID="hidden-content">
+                    <p class="post-content">
+                        Pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices
+                        neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis
+                        nisl
+                        rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero
+                        enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu
+                        cursus
+                        euismod quis viverra
+                        nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu
+                        felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut
+                        placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc
+                        scelerisque
+                        viverra mauris in aliquam sem fringilla ut morbi tincidunt
+                        augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis
+                        tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus
+                        vestibulum sed arcu non odio euismod
+                        lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit
+                        aliquam
+                        etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus urna duis convallis
+                        convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque
+                        sodales ut etiam sit.
+                    </p>
+                    <button onclick="hideContent(this)">Show Less</button>
                 </div>
-                <div class="archiveElement">
-                    <div class="postHead">
-                        <h2>Post Title 4</h2>
-                        <p>Post Creation Date 4</p>
-                        <p>Post Creator Username 4</p>
-                    </div>
-                    <div class="postContent">
-                        <p>Post Content 4</p>
-                        <p class="tags">#tag4-1 #tag4-2</p>
-                    </div>
-                </div>
-                <div class="archiveElement">
-                    <div class="postHead">
-                        <h2>Post Title 5</h2>
-                        <p>Post Creation Date 5</p>
-                        <p>Post Creator Username 5</p>
-                    </div>
-                    <div class="postContent">
-                        <p>Post Content 5</p>
-                        <p class="tags">#tag5-1 #tag5-2</p>
-                    </div>
-                </div>
+                <button class="showmorebutton" onclick="displayContent(this)">Show More</button>
             </div>
         </div>
     </body>
-</html>   
+</div>
+
+</html>
