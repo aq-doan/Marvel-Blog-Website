@@ -55,23 +55,28 @@
         <h1>LOGIN</h1>
 
         <table>
-            <label for="uname"><b>Email</b></label>
-            <input id="login_text_input_id" type="textLogin" placeholder="Email Address" name="uname" required>
+            <tr>
+            <td><label for="uname"><b>Email</b></label></td>
+            <td><input id="login_text_input_id" type="textLogin" placeholder="Email Address" name="uname" style="width: 180px;" required></td>
+            </tr>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <tr>
+                <td><label for="psw"><b>Password</b></label></td>
+                    <td><input type="password" placeholder="Enter Password" name="psw" style="width: 180px;" required></td>
+            </tr>
+            <tr>
+                <td><button type="submit" class="login_button" style="width: 80px;">
+                <span style="text-overflow:ellipsis;">Login</button></td>
 
-            <button type="submit" class="login_button" style="width: 80px;">
-                <span style="text-overflow:ellipsis;">Login</button>
-
-            <button type="button" class="cancel_button" style="width: 80px;">
-                <span style="text-overflow:ellipsis;">Cancel</button>
-
-            <label>
+                    <td><button type="button" class="cancel_button" style="width: 80px;">
+                <span style="text-overflow:ellipsis;">Cancel</button></td>
+                </tr>
+            <tr>
+            <td><label>
                 <input type="checkbox" checked="checked" name="remember">Remember me
-            </label>
+            </label></td><tr>
 
-            <span class="psw" style="background-color: #f1f1f1;"><a href="#">Forgot Password?</a></span>
+                <td><span class="psw" style="background-color: #f1f1f1;"><a href="#">Forgot Password?</a></span></td></tr>
         </table>
 </div>
 </form>
