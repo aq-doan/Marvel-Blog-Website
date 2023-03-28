@@ -70,8 +70,8 @@ nav{
     display: inline-block;
     text-transform: uppercase;
 }
-.nav a.active{
-    color: #fff;
+.active_navigation_link{
+    color: #551a8b;
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
