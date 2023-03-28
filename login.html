@@ -22,22 +22,22 @@
             <div class="navigation" id="menu">
                 <ul class="navigation_list">
                     <li class="navigation_li">
-                        <a href="./index.html" class="list-link current">Home</a>
+                        <a href="./index.html" class="navigation_link_list">Home</a>
                     </li>
                     <li class="navigation_li">
-                        <a href="./archive.html" class="list-link">Archive</a>
+                        <a href="./archive.html" class="navigation_link_list">Archive</a>
                     </li>
                     <li class="navigation_li">
-                        <a href="./create.html" class="list-link">Create Post</a>
+                        <a href="./create.html" class="navigation_link_list">Create Post</a>
                     </li>
                     <li class="navigation_li">
-                        <a href="./about.html" class="list-link">About Us</a>
+                        <a href="./about.html" class="navigation_link_list">About Us</a>
                     </li>
                     <li class="navigation_li">
-                        <a href="./login.html" class="list-link">Login</a>
+                        <a href="./login.html" class="navigation_link_list">Login</a>
                     </li>
                     <li class="navigation_li">
-                        <a href="./register.html" class="list-link">Register</a>
+                        <a href="./register.html" class="navigation_link_list">Register</a>
                     </li>
                 </ul>
             </div>
@@ -47,27 +47,30 @@
     
     <!--  LOGIN FORM  -->
     
-    <form name="loginForm" action="login.php" onsubmit="return validateForm()" method="post" 
-    style="position: relative; width: 100%; height: 300px;">
+    <form name="loginForm" id="loginFormID" onsubmit="return validateForm()" method="post">
         
-        <div class="containerLogin" style="position: absolute; left:30px; top: 100px;">
+        <div class="containerLogin" >
             <h1>LOGIN</h1>
-            <label for="uname"><b>Email</b></label>
-            <input type="textLogin" placeholder="Email Address" name="uname" required 
-            style="width: 30%; height: 20px; position: relative;"
-            >
+            
+            <table>
+                <label for="uname"><b>Email</b></label>
+                <input id = "login_text_input_id" type="textLogin" placeholder="Email Address" name="uname" required>
     
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
     
-            <button type="submit" class="loginButton" style="width: 80px;">
-                <span style="text-overflow:ellipsis;">Login</button>
-            <button type="button" class="cancelbtn" style="width: 80px;">
-                <span style="text-overflow:ellipsis;">Cancel</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember">Remember me
-            </label>
-            <span class="psw" style="background-color: #f1f1f1;">Forgot <a href="#">Password?</a></span>
+                <button type="submit" class="login_button" style="width: 80px;">
+                    <span style="text-overflow:ellipsis;">Login</button>
+
+                <button type="button" class="cancel_button" style="width: 80px;">
+                    <span style="text-overflow:ellipsis;">Cancel</button>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                </label>
+            
+                <span class="psw" style="background-color: #f1f1f1;">Forgot <a href="#">Password?</a></span>
+            </table>
         </div>
     </form>
     
