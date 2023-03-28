@@ -85,10 +85,7 @@ nav{
     font-style: italic;
 }
 
-#content {
-    background: url(./images/space-dark-wallpaper-preview.jpg) top center / cover repeat;
-    margin-top: 0;
-}
+
 
 #content .content-section {
     width: 1000px;
