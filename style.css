@@ -325,11 +325,19 @@ nav{
     margin: 0px;
   }
   
-.item {
+.member {
+    font-size: 1.2em;
     width: 25%; 
     height: 80%; 
-    background-color: #ccc;
+    color: #fff;
     margin: auto; 
     object-fit: cover;
-
+    text-align: center;
+    padding: 2px;
+    border:2px solid white;
+}
+.about-us {
+    color: white;
+    text-align: center;
+    margin: 4em;
 }
