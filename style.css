@@ -57,19 +57,7 @@ nav{
 .navigation_list {
     list-style-type: none;
     display: flex;
-    text-decoration: none;
 }
-
-.navigation_list li {
-    display: inline-block;
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    line-height: 46px;
-    padding: 0 24px;
-    text-transform: uppercase;
-}
-
 
 .navigation_link_list {
     color: #fff;
@@ -328,36 +316,20 @@ nav{
   
 /* About Page*/
 
-.about-us {
-    text-align: center;
-}
-.about-us h1 {
-    font-size: 2.5em;
-}
-.about-us p {
-    font-size: 1.2em;
-}
-.intro-about-page {
+.introduction-about-page {
     display: flex;
     justify-content: center; /* căn giữa các thẻ */
     width: 100%;
     height: 100%;
     border:2px solid #000;
     margin: 0px;
-}
-.member {
-    text-align: center;
-    width: 50%; 
+  }
+  
+.item {
+    width: 25%; 
     height: 80%; 
     background-color: #ccc;
     margin: auto; 
     object-fit: cover;
 
-}  
-.item {
-    width: 50%; 
-    height: 80%; 
-    background-color: #ccc;
-    margin: auto; 
-    object-fit: cover;
 }
