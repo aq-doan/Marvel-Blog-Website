@@ -235,3 +235,101 @@ nav{
   #toTopButton:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+
+ /* Create Post Page */
+.post-page {
+    background-color: rgb(0, 0, 0) ;
+
+}
+#post-page-header  {
+    width: auto;
+    height: auto;
+
+
+}
+#post-page-header img {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#post-page-title {
+    color: #fff;
+    border: 1px solid black;
+    margin-top: 2em;
+    margin-bottom:2em ;
+    text-align: center;
+}
+#post-page-title p {
+    font-size: 4em;
+
+}
+
+.post-page-content {
+    background-color: rgba(0, 0, 0, 0.805);
+    font-size: 1.2rem;
+    width: 60%;
+    border: 1px solid #ccc;
+    height: 100%;
+    margin: auto;
+    padding: 1em;
+    color: #ccc;
+
+}
+
+.post-page-content textarea {
+    margin-top: 1em;
+    width: 100%;
+    height: 650px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(238, 235, 235);
+}
+
+.post-page-content input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0 1em 0 ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(238, 235, 235);
+}
+
+
+.post-page-content .button {
+    background-color:#ccc; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+
+  
+/* About Page*/
+
+.introduction-about-page {
+    display: flex;
+    justify-content: center; /* căn giữa các thẻ */
+    width: 100%;
+    height: 100%;
+    border:2px solid #000;
+    margin: 0px;
+  }
+  
+.item {
+    width: 25%; 
+    height: 80%; 
+    background-color: #ccc;
+    margin: auto; 
+    object-fit: cover;
+
+}
