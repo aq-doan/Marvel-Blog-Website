@@ -17,11 +17,6 @@ html {
     z-index: -1;
 }
 
-/* need to consider */
-#container {
-    height: 100vh;
-}
-
 /*The navigation bar  */
 #menu {
     position: fixed;
@@ -108,10 +103,10 @@ nav{
     font-style: italic;
 }
 
-/* #content {
+#content {
     background: url(/images/space-dark-wallpaper-preview.jpg) top center / cover repeat;
     padding-bottom: 5px;
-} */
+}
 
 #content .content-section {
     width: 1200px;
