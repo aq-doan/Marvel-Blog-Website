@@ -43,7 +43,7 @@ function toTop() {
     document.documentElement.scrollTop = 0;
 }
 
-// function to fade effect on scrolling
+/*function to fade effect on scrolling*/
 function fadeContent() {
     //variable to get the pixel a document has scrolled from top website
     const currentPoint = window.pageYOffset;
@@ -58,3 +58,27 @@ function fadeContent() {
     document.querySelector("#content").style.opacity = tempOpacity;
 }
 window.addEventListener("scroll", fadeContent)
+
+/*Display the slideshow*/
+let numSlide = 1; //Use to assign the address of the image
+//Show image 1 first
+displaySlide(numSlide);
+//Change the slide after click button
+function changeSlide(num) {
+    displaySlide(numSlide += num);
+}
+//Change images in slide show
+function displaySlide(num) {
+    let slide = document.getElementsByClassName("slides");
+    if (num > slide.length) {
+        numSlide = 1;
+    }
+    if (num < 1) {
+        numSlide = slide.length;
+    }
+    //Make sure all slides are in an undisplayed mode
+    for (let i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+    }
+    slide[numSlide - 1].style.display = "block";
+}

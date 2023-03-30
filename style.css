@@ -28,14 +28,14 @@ html {
     z-index: 4;
 }
 
-nav{
+nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content:  space-between;
+    justify-content: space-between;
     overflow: auto;
 }
 
-#logo{
+#logo {
     position: relative;
     margin: 5px 5px;
     display: inline-block;
@@ -43,7 +43,7 @@ nav{
     height: 35px;
 }
 
-#navigation_header{
+#navigation_header {
     position: relative;
     width: 500px;
     height: 46px;
@@ -63,7 +63,8 @@ nav{
     display: inline-block;
     text-transform: uppercase;
 }
-.active_navigation_link{
+
+.active_navigation_link {
     color: #8665a5;
     text-decoration: none;
     line-height: 46px;
@@ -71,16 +72,18 @@ nav{
     display: inline-block;
     text-transform: uppercase;
 }
-.navigation_list li:hover a{
+
+.navigation_list li:hover a {
     color: #000;
     background-color: #ccc;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #666;
     color: white;
-  }
+}
 
-/* */
+/* style of header in home page */
 #home-header {
     position: relative;
     margin-top: 46px;
@@ -90,7 +93,7 @@ nav{
 
 #home-header .text-content {
     position: absolute;
-    bottom: 50%;
+    top: 12%;
     left: 16%;
     color: #fff;
 }
@@ -103,8 +106,55 @@ nav{
     font-style: italic;
 }
 
+/* Slide show */
+#home-header .slideshow {
+    position: relative;
+    margin-top: 40px;
+    left: -60px;
+}
+
+#home-header .slides {
+    display: none;
+}
+
+#home-header .slides>img {
+    width: 40%;
+    vertical-align: middle;
+}
+
+/* Last, next buttons */
+.last,
+.next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 1s ease;
+    border-radius: 5px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.next {
+    left: 39%;
+}
+
+.last {
+    left: -30px;
+}
+
+.last:hover,
+.next:hover {
+    background-color: rgba(137, 129, 129, 0.8);
+}
+
+/* Main content */
 #content {
-    background: url(/images/space-dark-wallpaper-preview.jpg) top center / cover repeat;
     padding-bottom: 5px;
 }
 
@@ -173,23 +223,27 @@ nav{
     clear: both;
 }
 
+/* Footer */
 #footer {
     position: relative;
     background-color: #fff;
     width: 100%;
 }
+
 /*Login Form*/
 #loginFormID {
-    position: relative; 
-    width: 150%; 
+    position: relative;
+    width: 150%;
     height: 300px;
 }
-.login_button{
+
+.login_button {
     text-decoration: none;
 }
-.LoginFormDiv{
+
+.LoginFormDiv {
     position: absolute;
-    left:30px; 
+    left: 30px;
     top: 100px;
     width: 1000px;
     margin-left: auto;
@@ -200,63 +254,84 @@ nav{
     border-radius: 10px;
 
 }
+
 #login_text_input_id {
-    width: 30%; 
-    height: 20px; 
+    width: 30%;
+    height: 20px;
     position: relative;
 }
+
 /* register */
-#register_form{
+#register_form {
     position: relative;
     width: 100%;
-    height: 300px; 
+    height: 300px;
     top: 75;
 }
+
 /* scroll to top button */
 #toTopButton {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #555; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  
-  #toTopButton:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #555;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
 
- /* Create Post Page */
+#toTopButton:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+/* Create Post Page */
 .post-page {
-    background-color: rgb(0, 0, 0) ;
+    background-color: rgb(0, 0, 0);
 
 }
-#post-page-header  {
+
+#post-page-header {
     width: auto;
     height: auto;
 
 
 }
+
 #post-page-header img {
     margin: auto;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
+
 #post-page-title {
     color: #fff;
     border: 1px solid black;
     margin-top: 2em;
-    margin-bottom:2em ;
+    margin-bottom: 2em;
     text-align: center;
 }
+
 #post-page-title p {
     font-size: 4em;
 
@@ -287,7 +362,7 @@ nav{
 .post-page-content input[type=text] {
     width: 100%;
     padding: 12px 20px;
-    margin: 12px 0 1em 0 ;
+    margin: 12px 0 1em 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -298,7 +373,7 @@ nav{
 
 
 .post-page-content .button {
-    background-color:#ccc; 
+    background-color: #ccc;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -310,29 +385,31 @@ nav{
 }
 
 
-  
+
 /* About Page*/
 
 .introduction-about-page {
     display: flex;
-    justify-content: center; /* căn giữa các thẻ */
+    justify-content: center;
+    /* căn giữa các thẻ */
     width: 100%;
     height: 100%;
-    border:2px solid #000;
+    border: 2px solid #000;
     margin: 0px;
-  }
-  
+}
+
 .member {
     font-size: 1.2em;
-    width: 25%; 
-    height: 80%; 
+    width: 25%;
+    height: 80%;
     color: #fff;
-    margin: auto; 
+    margin: auto;
     object-fit: cover;
     text-align: center;
     padding: 2px;
-    border:2px solid white;
+    border: 2px solid white;
 }
+
 .about-us {
     color: white;
     text-align: center;

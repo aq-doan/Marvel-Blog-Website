@@ -44,12 +44,27 @@
             </nav>
         </div>
     </header>
-
-    <!--Header text-->
+    <!-- Header -->
     <div id="home-header">
+        <!--Header text-->
         <div class="text-content">
             <h1 class="text-heading">Marvel blog</h1>
             <div class="text-description">My world, my stories.</div>
+            <!-- Header slide show -->
+            <div class="slideshow">
+                <div class="slides">
+                    <img src="./images/slide-1.jpg">
+                </div>
+                <div class="slides">
+                    <img src="./images/slide-2.jpg">
+                </div>
+                <div class="slides">
+                    <img src="./images/slide-3.jpg">
+                </div>
+
+                <div class="last" onclick="changeSlide(-1)">❮</div>
+                <div class="next" onclick="changeSlide(1)">❯</div>
+            </div>
         </div>
     </div>
     <!--Content-->
