@@ -41,10 +41,11 @@ nav{
 }
 
 #logo{
-    margin-left: 5px;
     position: relative;
-    margin-top: 5px;
-    margin-right:5px ;
+    margin: 5px 5px;
+    display: inline-block;
+    width: 40px;
+    height: 35px;
 }
 
 #navigation_header{
@@ -63,15 +64,15 @@ nav{
     color: #fff;
     text-decoration: none;
     line-height: 46px;
-    padding: 0 24px;
+    padding: 0 32px;
     display: inline-block;
     text-transform: uppercase;
 }
 .active_navigation_link{
-    color: #551a8b;
+    color: #8665a5;
     text-decoration: none;
     line-height: 46px;
-    padding: 0 24px;
+    padding: 0 32px;
     display: inline-block;
     text-transform: uppercase;
 }
@@ -87,8 +88,8 @@ nav{
 /* */
 #home-header {
     position: relative;
-    height: 500px;
-    
+    margin-top: 46px;
+    padding-top: 50%;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -107,8 +108,13 @@ nav{
     font-style: italic;
 }
 
+/* #content {
+    background: url(/images/space-dark-wallpaper-preview.jpg) top center / cover repeat;
+    padding-bottom: 5px;
+} */
+
 #content .content-section {
-    width: 1000px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 32px 20px;
@@ -178,10 +184,6 @@ nav{
     width: 100%;
 }
 /*Login Form*/
-#logo{
-    width:40px;
-    height:40px;
-}
 #loginFormID {
     position: relative; 
     width: 150%; 
