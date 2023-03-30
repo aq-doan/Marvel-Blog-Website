@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function () {
     let T = document.getElementsByClassName("hidden-content");
     for (const element of T) {
         element.style.display = "none";
@@ -30,7 +30,7 @@ function hideContent(initiator) {
  */
 let topButton = document.getElementById("toTopButton");
 
-window.onscroll = function(){
+window.onscroll = function () {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         topButton.style.display = "block";
     } else {
@@ -40,5 +40,21 @@ window.onscroll = function(){
 
 function toTop() {
     document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;    
+    document.documentElement.scrollTop = 0;
 }
+
+// function to fade effect on scrolling
+function fadeContent() {
+    //variable to get the pixel a document has scrolled from top website
+    const currentPoint = window.pageYOffset;
+    const displayPoint = 600; // The pixel location where the content will be fully displayed
+    let tempOpacity; //temporary variable of content's opacity
+
+    if (currentPoint <= displayPoint) {
+        tempOpacity = 0 + currentPoint / displayPoint;
+    } else {
+        tempOpacity = 1;
+    }
+    document.querySelector("#content").style.opacity = tempOpacity;
+}
+window.addEventListener("scroll", fadeContent)
