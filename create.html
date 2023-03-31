@@ -23,7 +23,7 @@
             <div class="navigation" id="menu">
                 <ul class="navigation_list">
                     <li class="navigation_li">
-                        <img src="./images/MarvelLogo.png" id="logo" alt="logoIMG" />
+                        <img src="./images/MarvelLogo.png"  id="logo" alt="logoIMG" />
                     </li>
                     <li class="navigation_li">
                         <a href="./index.html" class="navigation_link_list">Home</a>
@@ -41,7 +41,7 @@
                         <a href="./login.html" class="navigation_link_list">Login</a>
                     </li>
                     <li class="navigation_li">
-                        <a href="./register.html" class="navigation_link_list">Register</a>
+                        <a href="./register.html" class="navigation_link_list" >Register</a>
                     </li>
                 </ul>
             </div>
@@ -51,42 +51,49 @@
 
 <body>
     <!--  CREATE PAGE-FORM  -->
-    <div class="post-page">
-        <div id="post-page-header">
+    <div class = "post-page"> 
+        <div id = "post-page-header">
             <img src="images/avengers.jpg" alt="avengers">
         </div>
-        <div id="post-page-title">
-            <p>OUR STORY
-            <p>
+        <div id = "post-page-title">
+            <p>OUR STORY <p>
         </div>
-        <div class="introduction-about-page">
-            <div class="left-side-content">
+        <div class = "create-content-display">
+            <div class = "left-side-content">
                 <img src="images/captain-america-half.jpg" alt="avengers">
             </div>
-
-            <div class="post-page-content">
-                <form>
-                    <label for="title">Title</label><br>
-                    <input type="text" id="title" name="title" placeholder="Enter content title.." required><br>
-                    <label for="Kwords">Keywords/Tags</label>
-                    <input type="text" id="Kwords" name="post-keywords" placeholder="Enter keywords/tags.." required>
-
-                    <label for="fname">Content</label><br>
-                    <textarea type="text" id="post-content" name="post-content" rows="10"> </textarea><br><br>
-
-                    <a href="#" class="button">Post</a>
-                    <a href="#" class="button">Reset</a>
-
+            
+            <div class = "post-page-content">
+                <form id = "post-page-form">
+                    <div>
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" >
+                        <span id="title-error" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="tags">Tags/Keywords:</label>
+                        <input type="text" id="tags" name="tags">
+                        <span id="tags-error" class="error"></span><br>
+                    </div>
+                    <div>
+                        <label for="content">Content:</label>
+                        <textarea id="content" name="content"></textarea>
+                        <span id="content-error" class="error"></span>
+                    </div>
+                    <div>
+                        <button type="submit" id="create-post-btn">Submit</button>
+                        <button type="reset" id="reset-form-btn">Reset</button>
+                    </div>
                 </form>
             </div>
-
-            <div class="right-side-content">
+            
+            <div class = "right-side-content">
                 <img src="images/ron-man-half.jpg" alt="avengers">
             </div>
         </div>
 
-    </div>
-
+    </div>  
+    
 </body>
 
 <button onclick="toTop()" id="toTopButton">To Top</button>
