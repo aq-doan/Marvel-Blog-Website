@@ -41,7 +41,7 @@ function validateForm(event) {
         event.preventDefault(); // prevent default form submission
         window.location.replace("./index.html");
     }
-    // Password  validation 
+    // Password  validation policy
     //minimum length of 5 characters with combination of uppercase and lowercase characters
     const passPolicy = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[0-9a-zA-Z]{5,}$/;
     if (!passPolicy.test(password)) {
