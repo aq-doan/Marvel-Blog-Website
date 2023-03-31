@@ -89,3 +89,70 @@ function displaySlide(num) {
     slide[numSlide - 1].style.display = "block";
 }
 
+/**
+ * Post page 
+ */
+
+const form = document.querySelector('#post-page-form');
+const titleInput = document.querySelector('#title');
+const tagsInput = document.querySelector('#tags');
+const contentInput = document.querySelector('#content');
+const titleError = document.querySelector('#title-error');
+const tagsError = document.querySelector('#tags-error');
+const contentError = document.querySelector('#content-error');
+
+form.addEventListener('submit', (event) => {
+  // Prevent form submission
+  event.preventDefault();
+
+  // Reset error messages and styles
+  titleError.textContent = '';
+  titleInput.classList.remove('error');
+  tagsError.textContent = '';
+  tagsInput.classList.remove('error');
+  contentError.textContent = '';
+  contentInput.classList.remove('error');
+
+  // Validate form fields
+
+  let isValid = true;
+  if (titleInput.value.trim() === '') {
+    titleError.innerHTML = 'Title is required.';
+
+
+    isValid = false;
+  } else if (titleInput.value.trim().length > 70) {
+    titleError.textContent = 'Title cannot exceed 70 characters.';
+    isValid = false;
+  } 
+  
+  if (tagsInput.value.trim() === '') {
+    tagsError.textContent = 'Keywords/Tags is required.';
+
+    isValid = false;
+  }
+
+  if (contentInput.value.trim() === '') {
+    contentError.textContent = 'Content is required.';
+    isValid = false;
+  }
+
+  // Submit the form and redirect to home page if valid
+  if (isValid) {
+    alert("Form submitted successfully!");
+    window.location.href = 'index.html';
+  }
+});
+
+// Reset form fields and styles
+form.addEventListener('reset', () => {
+  titleInput.value = '';
+  tagsInput.value = '';
+  contentInput.value = '';
+  titleError.textContent = '';
+  titleInput.classList.remove('error');
+  tagsError.textContent = '';
+  tagsInput.classList.remove('error');
+  contentError.textContent = '';
+  contentInput.classList.remove('error');
+});
