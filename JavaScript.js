@@ -4,6 +4,12 @@ window.onload = function () {
         element.style.display = "none";
         console.log(element.style.display);
     }
+
+    let head = document.getElementById("navigation-header");
+    let img = document.createElement("img");
+    img.src = "images/wp2068895.jpg";
+    img.classList.add("img-header");
+    head.appendChild(img);
 }
 
 function displayContent(initiator) {
