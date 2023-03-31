@@ -7,6 +7,7 @@
     <meta name="author" content="Anh Quan Doan, Jonathan Charleston, Van Duc Anh Nguyen, Quang Khai Tran">
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" type="image/png" href="./images/MarvelLogo.png">
+    <script src="register.js" defer></script>
     <script type="text/javascript" src="JavaScript.js" defer></script>
 </head>
 
@@ -58,12 +59,12 @@
 
     <div class="LoginFormDiv">
         <h3>Enter your details below to register:</h3>
-    <form id = "register_form" onsubmit="return validateForm()">
+    <form id = "register_form" name = "register_form" onsubmit="return validateForm()">
         <div id = "form_container_register">
         <table>
             <tr>
                 <td><label class="form-label" for="uname">Username</label></td>
-                <td><input class ="form-control" type="text" id="uname" placeholder="xyz" required></td>
+                <td><input class ="form-control" type="text" id="uname" name = "uname" placeholder="xyz" required></td>
             </tr>
             
 
@@ -74,12 +75,12 @@
 
             <tr>
                 <td><label class="form-label" for="pass">Password</label></td>
-                <td><input id = "pass" type="password" class="masked" placeholder= "Enter Password" required /></td>
+                <td><input id = "pass" type="password" class="masked" name = "pass" placeholder= "Enter Password" required /></td>
             </tr>
 
             <tr>
                 <td><label class="form-label" for="cpass">Comfirm Password</label></td>
-                <td><input id="cpass" type="password" class="masked" placeholder= "Comfirm Password" required /></td>
+                <td><input id="cpass" name = "cpass" type="password" class="masked" placeholder= "Comfirm Password" required /></td>
             </tr>
 
         </table>
