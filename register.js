@@ -1,8 +1,19 @@
+//register form
 const form = document.querySelector("#registrationForm");
 if (form) {
     form.addEventListener('submit', validateForm);
 }
+//reset function
+const resetButton = document.querySelector("#reset");
+if (resetButton) {
+    resetButton.addEventListener('click', reset);
+}
+function reset() {
 
+    form.reset();
+}
+
+//validation
 function validateForm(event) {
 
     const userName = form.elements['uname'].value;
@@ -53,12 +64,5 @@ function validateForm(event) {
    
 }
 
-const resetButton = document.querySelector("#reset");
-if (resetButton) {
-    resetButton.addEventListener('click', reset);
-}
-function reset() {
 
-    form.reset();
-}
 
