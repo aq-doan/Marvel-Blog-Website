@@ -29,7 +29,7 @@ function validateForm(event) {
     // Password  validation policy
     //minimum length of 5 characters with combination of uppercase and lowercase characters
     const passPolicy = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[0-9a-zA-Z]{5,}$/;
-    let testPass =passPolicy.test(password)
+    let testPass = passPolicy.test(password)
     if (userName == "") {
         colorUserName.style.backgroundColor = '#FFC0CB';
         errorMsg.textContent = "Please enter your username";
@@ -50,17 +50,17 @@ function validateForm(event) {
         errorMsg.textContent = "Passwords do not match";
 
         event.preventDefault();
-    } else if (!testPass){
+    } else if (!testPass) {
         colorConfirmPassword.style.backgroundColor = '#FFC0CB';
         colorPassword.style.backgroundColor = '#FFC0CB';
         errorMsg.textContent = "Password must be at least 5 characters and contain at least one digit, one uppercase letter, and one lowercase letter (Example: Abc123)";
         event.preventDefault();
         return;
-    }else {
+    } else {
         event.preventDefault(); // prevent default form submission
         window.location.replace("./index.html");
     }
-   
+
 }
 
 
