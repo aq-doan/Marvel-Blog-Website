@@ -83,7 +83,19 @@
                 more complex for password security reason. 
                 
                 The validation field function js file for the login page and registration page is separated 
-                from the rest of the pages in order to minimise conflict between the execution of codes. </p>
+                from the rest of the pages in order to minimise conflict between the execution of codes. Within the
+                registration.js file, function to reset the form, validating is implemented where there are event 
+                listener to run the function when buttons are clicked by the users. Within the validation function, there should
+                be a series of if-else statement for validating each input. Validating against the password policy locates at the end after
+                comfirm password and password is validated to not be empty and to be identical to each other. Then the password is examined 
+                by the policy, if not satified, red background of the input field will appear with an error message to 
+                depict that the password does not satisfy the password policy. 
+                
+                The value of the password is accessed using DOM, then it is tested using the test() function against 
+                passPolicy = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[0-9a-zA-Z]{5,}$/. The test() function will return true or false (true for 
+                meeting the requirement and vice versa). The result of the test function is stored in a new variable. When the last validation 
+                steps occures, if false is passed in to the if-statement, then the error message will be displayed, otherwise it
+                meets the requirment and return back to home page. </p>
         </div>
         <div class="item">
             <p>Explain how your group decided to handle new user registration.</p>
