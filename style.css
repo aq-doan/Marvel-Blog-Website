@@ -460,33 +460,51 @@ button[type="submit"]:hover {
 
 /* About Page*/
 
-.intro-about-page {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #000;
-    margin: 0px;
-}
-
-.member {
-    font-size: 1.2em;
-    width: 25%;
-    height: 80%;
-    color: #fff;
-    margin: auto;
-    object-fit: cover;
-    text-align: center;
-    padding: 2px;
-    border: 2px solid white;
-}
-
 .about-us {
     color: white;
     text-align: center;
-    margin: 4em;
+    margin: 6rem;
+}
+.about-us h1 {
+    font-size: 6em;
+}
+
+.about-display {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    height: 100%;
+    border:2px solid #000;
+    margin: 2px;
+    color: #ccc;
+    background-color: #c6c4f279;
+  }
+
+.member-intro {
+    margin: 5%;
+    display: inline-block;
+    width: 20%;
+}
+  
+.member-intro img {
+    width: 100%;
+    height: auto;
+    border-radius:25%;
+
+}
+.desc p {
+    margin: 2em;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.description {
+    width: 100%;
+    height:800px;
 }
 .item {
-    color: white;
+    color:white;
 }
-    
