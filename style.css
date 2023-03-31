@@ -379,7 +379,7 @@ footer .footer-title {
 .post-page-content textarea {
     margin-top: 1em;
     width: 100%;
-    height: 650px;
+    height: 500px;
     border-radius: 4px;
     font-size: 0.9em;
     font-family: 'Times New Roman', Times, serif;
@@ -478,19 +478,4 @@ button[type="submit"]:hover {
     border-radius:25%;
 
 }
-.desc p {
-    margin: 2em;
-    padding: 15px;
-    text-align: center;
-    color: #fff;
-    font-size: 1.2em;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-.description {
-    width: 100%;
-    height:800px;
-}
-.item {
-    color:white;
-}
+
