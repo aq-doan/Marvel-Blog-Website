@@ -11,135 +11,150 @@
 </head>
 
 <body>
-<!-- Header -->
-<header class="header" id="navigation_header">
+    <!-- Header -->
+    <header class="header" id="navigation_header">
 
-    <!-- Site navigation  -->
-    <img class = "img-header" src="./images/wp2068895.jpg" alt="">
-    <div id="container_nav_header">
-        <nav class="navbar container" style="position: relative;">
+        <!-- Site navigation  -->
+        <img class="img-header" src="./images/wp2068895.jpg" alt="">
+        <div id="container_nav_header">
+            <nav class="navbar container" style="position: relative;">
 
-            <!-- Site navigation  -->
-            <div class="navigation" id="menu">
-                <ul class="navigation_list">
-                    <li class="navigation_li">
-                        <img src="./images/MarvelLogo.png"  id="logo" alt="logoIMG" />
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./index.html" class="navigation_link_list">Home</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./archive.html" class="navigation_link_list">Archive</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./create.html" class="navigation_link_list">Create Post</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./about.html" class="active_navigation_link">About Us</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./login.html" class="navigation_link_list">Login</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./register.html" class="navigation_link_list">Register</a>
-                    </li>
-                </ul>
+                <!-- Site navigation  -->
+                <div class="navigation" id="menu">
+                    <ul class="navigation_list">
+                        <li class="navigation_li">
+                            <img src="./images/MarvelLogo.png" id="logo" alt="logoIMG" />
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./index.html" class="navigation_link_list">Home</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./archive.html" class="navigation_link_list">Archive</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./create.html" class="navigation_link_list">Create Post</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./about.html" class="active_navigation_link">About Us</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./login.html" class="navigation_link_list">Login</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./register.html" class="navigation_link_list">Register</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+    </header>
+
+    <!--About Page Form-->
+    <div class="about-us">
+        <h1>About us</h1><br>
+        <p>We are the avengers from KIT202 </p>
+    </div>
+    <div class="about-display">
+        <div class="member-intro">
+            <img src="images/hulk-pop.jpg" alt="hulk" width="600" height="400">
+            <div class="desc">
+                <p>Anh Quan Doan | 624501 </p>
             </div>
-    </div>
-    </nav>
-</header>
+        </div>
 
-<!--About Page Form-->
-<div class = "about-us">
-    <h1>About us</h1><br>
-    <p>We are the avengers from KIT202 </p>
-</div>
-<div class="about-display">
-    <div class="member-intro">
-        <img src="images/hulk-pop.jpg" alt="hulk" width="600" height="400">
-        <div class="desc">
-            <p>Anh Quan Doan | 624501 </p> 
+        <div class="member-intro">
+            <img src="images/captain-pop.jpg" alt="Captain America">
+            <div class="desc">
+                <p>Jonathan Charleston | 623759 </p>
+            </div>
+        </div>
+
+        <div class="member-intro">
+            <img src="images/Thanos-pop.jpg" alt="Thor">
+            <div class="desc">
+                <p>Van Duc Anh Nguyen | 629616 </p><br>
+            </div>
+        </div>
+
+        <div class="member-intro">
+            <img src="images/ironman-pop.jpg" alt="Iron Man">
+            <div class="desc">
+                <p>Quang Khai Tran | 554224 </p>
+            </div>
         </div>
     </div>
-    
-    <div class="member-intro">      
-        <img src="images/captain-pop.jpg" alt="Captain America">
-        <div class="desc">
-            <p>Jonathan Charleston |  623759 </p> 
+    <div id="content">
+        <div class="content-section" id="blog-1">
+            <h2 class="post-title">Subject matter and theme</h2>
+            <p class="post-content">
+                We aim for an entertaining and interesting website. The first step we had quite difficult in choosing
+                the theme and colors for the website.
+                After a while of discussion, we finally chose the Marvel theme because everyone in our group liked
+                Marvel Studio.
+                We choose colors with deep tones and depth. This makes our website more beautiful and eye-catching.
+                About the layout, we decided to show all the content in order from top to bottom to make the viewer feel
+                comfortable and easy to observe.
+            </p>
         </div>
-    </div>
-    
-    <div class="member-intro">
-        <img src="images/Thanos-pop.jpg" alt="Thor" >
-        <div class="desc">
-            <p>Van Duc Anh Nguyen | 629616 </p><br>
+        <div class="content-section" id="blog-2">
+            <h2 class="post-title">Group’s password policy</h2>
+            <p class="post-content">
+            <p>For our group password policy, we decide to implement a policy where the minimium
+                characters requirement is 5 with the combination of at least 1 uppercase, 1 lowercase,
+                and 1 number digit. This can be further complicated if adding special symbols to our policy
+                by adding it to the testing library of the password. However, since the website is in
+                prototype phrase, we decided to use that above combination for the purpose of testing before making it
+                more complex for password security reason. </p><br>
+
+            <p>The validation field function js file for the login page and registration page is separated
+                from the rest of the pages in order to minimise conflict between the execution of codes
+                from the rest of the pages in order to minimise conflict between the execution of codes. Within the
+                registration.js file, function to reset the form, validating is implemented where there are event
+                listener to run the function when buttons are clicked by the users. Within the validation function,
+                there should
+                be a series of if-else statement for validating each input. Validating against the password policy
+                locates at the end after
+                comfirm password and password is validated to not be empty and to be identical to each other. Then the
+                password is examined
+                by the policy, if not satified, red background of the input field will appear with an error message to
+                depict that the password does not satisfy the password policy. </p><br>
+
+            <p>The value of the password is accessed using DOM, then it is tested using the test() function against
+                passPolicy = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[0-9a-zA-Z]{5,}$/. The test() function will return true or
+                false (true for
+                meeting the requirement and vice versa). The result of the test function is stored in a new variable.
+                When the last validation
+                steps occures, if false is passed in to the if-statement, then the error message will be displayed,
+                otherwise it
+                meets the requirment and return back to home page. </p>
+            </p>
         </div>
-    </div>
-    
-    <div class="member-intro">
-        <img src="images/ironman-pop.jpg" alt="Iron Man" >
-        <div class="desc">
-            <p>Quang Khai Tran |  554224 </p>
+        <div class="content-section" id="blog-3">
+            <h2 class="post-title">Handle new user registration</h2>
+            <p class="post-content">
+                We decided to redirect the user to the register page instead of doing this dynamically. The user can
+                access the
+                registration page by click on the navigation section bar, footer, or through a button on the login page
+                if they are not registered.
+
+                The reason for this method is due to ease of implementing the the html and js files for login and
+                register page. Although similar implementation
+                code is applied, separating the code for both make it better for debugging and implementing.
+
+                If doing this dynamically, it would create a complicated login/register page where in the event of
+                unessary error occur, it would complicate the
+                debug process. In addition, having a register page locate somewhere visually allow the user to go direct
+                to that page if they are new, hence,
+                improving their experience of using the page instead of having go to the login page to find the register
+                function.
+            </p>
         </div>
-    </div>
-</div>
-<div id="content">
-    <div class="content-section" id="blog-1">
-        <h2 class="post-title">Subject matter and theme</h2>
-        <p class="post-content">
-            We aim for an entertaining and interesting website. The first step we had quite difficult in choosing the theme and colors for the website. 
-            After a while of discussion, we finally chose the Marvel theme because everyone in our group liked Marvel Studio.
-            We choose colors with deep tones and depth. This makes our website more beautiful and eye-catching.
-            About the layout, we decided to show all the content in order from top to bottom to make the viewer feel comfortable and easy to observe.
-        </p>
-    </div>
-    <div class="content-section" id="blog-2">
-        <h2 class="post-title">Group’s password policy</h2>
-        <p class="post-content">
-            <p>For our group password policy, we decide to implement a policy where the minimium 
-            characters requirement is 5 with the combination of at least 1 uppercase, 1 lowercase,
-            and 1 number digit. This can be further complicated if adding special symbols to our policy
-            by adding it to the testing library of the password. However, since the website is in 
-            prototype phrase, we decided to use that above combination for the purpose of testing before making it 
-            more complex for password security reason. </p><br>
+        <div class="content-section" id="blog-4">
+            <h2 class="post-title">The embellishment/s our group incorporated beyond the core specifications</h2>
 
-            <p>The validation field function js file for the login page and registration page is separated 
-            from the rest of the pages in order to minimise conflict between the execution of codes
-            from the rest of the pages in order to minimise conflict between the execution of codes. Within the
-            registration.js file, function to reset the form, validating is implemented where there are event 
-            listener to run the function when buttons are clicked by the users. Within the validation function, there should
-            be a series of if-else statement for validating each input. Validating against the password policy locates at the end after
-            comfirm password and password is validated to not be empty and to be identical to each other. Then the password is examined 
-            by the policy, if not satified, red background of the input field will appear with an error message to 
-            depict that the password does not satisfy the password policy. </p><br>
+            <p class="post-content">
 
-            <p>The value of the password is accessed using DOM, then it is tested using the test() function against 
-            passPolicy = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[0-9a-zA-Z]{5,}$/. The test() function will return true or false (true for 
-            meeting the requirement and vice versa). The result of the test function is stored in a new variable. When the last validation 
-            steps occures, if false is passed in to the if-statement, then the error message will be displayed, otherwise it
-            meets the requirment and return back to home page. </p>
-        </p>
-    </div>
-    <div class="content-section" id="blog-3">
-        <h2 class="post-title">Handle new user registration</h2>
-        <p class="post-content">
-            We decided to redirect the user to the register page instead of doing this dynamically. The user can access the 
-            registration page by click on the navigation section bar, footer, or through a button on the login page if they are not registered.
-
-            The reason for this method is due to ease of implementing the the html and js files for login and register page. Although similar implementation
-            code is applied, separating the code for both make it better for debugging and implementing. 
-
-            If doing this dynamically, it would create a complicated login/register page where in the event of unessary error occur, it would complicate the 
-            debug process. In addition, having a register page locate somewhere visually allow the user to go direct to that page if they are new, hence,
-            improving their experience of using the page instead of having go to the login page to find the register function.
-        </p>
-    </div>
-    <div class="content-section" id="blog-4">
-        <h2 class="post-title">The embellishment/s our group incorporated beyond the core specifications</h2>
-
-        <p class="post-content">
-            
-            <br>
+                <br>
                 - Navigation bar: <br>
                 Website navigation allows visitors to quickly and easily find the information they are looking for (like
                 registering or logging in to create a new blog post). In addition, it also displays to help users know
@@ -159,75 +174,103 @@
                 the content on HTML files before with classes/ID names that are consistent for each of their functions,
                 so it's easy to tweak the CSS properties for all the content. In addition, this has support for the JS
                 side. Based on the mouse scroll's coordinates, the content will be slowly displayed.
-        </p>
-    </div>
-    
-    <div class="content-section" id="blog-5">
-        <h2 class="post-title">reference</h2>
+                <br>
+                - The toTop button: <br>
+                This button allows visitors to return to the top of the page without scrolling too much. We use
+                window.pageYOffset to determine the coordinates of the mouse wheel the user is in from the window's
+                upper. The button will be displayed from there, and the user can interact with it.
+            </p>
+        </div>
 
-        <p class="post-content">
+        <div class="content-section" id="blog-5">
+            <h2 class="post-title">reference</h2>
+
+            <p class="post-content">
             <h3>All text content is generated from:
                 Lorem Ipsum. (2020). Lorem Ipsum. [online] Available at: https://loremipsum.io/.
-        </h3>
+            </h3>
             <h3>Slideshow images:</h3>
-            <p>Marvel-avengers wallpaper in 1280x720 resolution (no date) Marvel-Avengers wallpaper in 1280x720 resolution. Available at: https://free4kwallpapers.com/wallpaper-preview/movies/marvel-avengers/BjAk/1280/720 (Accessed: March 31, 2023). </p>
-            <p>Studios, I.by: M. (no date) Download wallpaper: Avengers: Endgame 1280X720, HD Wallpapers. Available at: https://uhdwallpapers.org/wallpaper/avengers-endgame_898598/1280x720/ (Accessed: March 31, 2023). </p>
-            <p>Marvel heroes 8K wallpapers (no date) hdqwalls.com. Available at: https://hdqwalls.com/download/1280x720/marvel-heroes-8k (Accessed: March 31, 2023). </p>
+            <p>Marvel-avengers wallpaper in 1280x720 resolution (no date) Marvel-Avengers wallpaper in 1280x720
+                resolution. Available at:
+                https://free4kwallpapers.com/wallpaper-preview/movies/marvel-avengers/BjAk/1280/720 (Accessed: March 31,
+                2023). </p>
+            <p>Studios, I.by: M. (no date) Download wallpaper: Avengers: Endgame 1280X720, HD Wallpapers. Available at:
+                https://uhdwallpapers.org/wallpaper/avengers-endgame_898598/1280x720/ (Accessed: March 31, 2023). </p>
+            <p>Marvel heroes 8K wallpapers (no date) hdqwalls.com. Available at:
+                https://hdqwalls.com/download/1280x720/marvel-heroes-8k (Accessed: March 31, 2023). </p>
             <br>
             <h3>Deadpool background:</h3>
-            <p>Deadpool PFP - avatars.alphacoders.com (no date). Available at: https://avatars.alphacoders.com/avatars/view/160245 (Accessed: March 31, 2023). </p>
+            <p>Deadpool PFP - avatars.alphacoders.com (no date). Available at:
+                https://avatars.alphacoders.com/avatars/view/160245 (Accessed: March 31, 2023). </p>
             <br>
             <h3>Content home page images:</h3>
-            <p>Thor (2011) IMDb. IMDb.com. Available at: https://www.imdb.com/title/tt0800369/ (Accessed: March 31, 2023). </p>
-            <p>Na (no date) Doctor strange, Rotten Tomatoes. Available at: https://www.rottentomatoes.com/m/doctor_strange_2016 (Accessed: March 31, 2023). </p>
-            <p>Nathaniel Richards (exiled Kang) (no date) Marvel Movies. Available at: https://marvel-movies.fandom.com/wiki/Nathaniel_Richards_(Exiled_Kang) (Accessed: March 31, 2023). </p>
+            <p>Thor (2011) IMDb. IMDb.com. Available at: https://www.imdb.com/title/tt0800369/ (Accessed: March 31,
+                2023). </p>
+            <p>Na (no date) Doctor strange, Rotten Tomatoes. Available at:
+                https://www.rottentomatoes.com/m/doctor_strange_2016 (Accessed: March 31, 2023). </p>
+            <p>Nathaniel Richards (exiled Kang) (no date) Marvel Movies. Available at:
+                https://marvel-movies.fandom.com/wiki/Nathaniel_Richards_(Exiled_Kang) (Accessed: March 31, 2023). </p>
             <br>
             <h3>Footer images:</h3>
-            <p>Marvel Comics (2023) Wikipedia. Wikimedia Foundation. Available at: https://en.wikipedia.org/wiki/Marvel_Comics (Accessed: March 31, 2023). </p>
+            <p>Marvel Comics (2023) Wikipedia. Wikimedia Foundation. Available at:
+                https://en.wikipedia.org/wiki/Marvel_Comics (Accessed: March 31, 2023). </p>
             <br>
             <h3>Archive page images:</h3>
-            <p>Iron Man (2008) (no date) The A.V. Club. avclub. Available at: https://www.avclub.com/film/reviews/iron-man-2008 (Accessed: March 31, 2023). </p>
-            <p>Captain america: The first avenger (2011) IMDb. IMDb.com. Available at: https://www.imdb.com/title/tt0458339/ (Accessed: March 31, 2023). </p>
-            <p>The Incredible Hulk (2008 film) (no date) Marvel Database. Available at: https://marvel.fandom.com/wiki/The_Incredible_Hulk_(2008_film) (Accessed: March 31, 2023). </p>
+            <p>Iron Man (2008) (no date) The A.V. Club. avclub. Available at:
+                https://www.avclub.com/film/reviews/iron-man-2008 (Accessed: March 31, 2023). </p>
+            <p>Captain america: The first avenger (2011) IMDb. IMDb.com. Available at:
+                https://www.imdb.com/title/tt0458339/ (Accessed: March 31, 2023). </p>
+            <p>The Incredible Hulk (2008 film) (no date) Marvel Database. Available at:
+                https://marvel.fandom.com/wiki/The_Incredible_Hulk_(2008_film) (Accessed: March 31, 2023). </p>
             <br>
-            <p>Funko pop marvel figurine checklist (2023) Hero Habit. Available at: https://herohabit.com/funko-pop-marvel/ (Accessed: March 31, 2023). </p>
-            <p>Pin on mobile wallpapers (2019) Pinterest. Available at: https://pin.it/1EYSW7h (Accessed: March 31, 2023). </p>
-            <p>She-hulk: Attorney at Law (2022) - hulk pop! vinyl figure #1130 (no date) I'm Rick James Bricks. Available at: https://imrickjamesbricks.com.au/products/she-hulk-attorney-at-law-2022-hulk-pop-vinyl-figure-1130 (Accessed: March 31, 2023). </p>
-            <p>Pop funko marvel collector corps #481 avengers endgame captain america (no date) Amazon.com.au: Toys &amp; Games. Available at: https://www.amazon.com.au/POP-Collector-Avengers-Endgame-Captain/dp/B07ST4TP9L (Accessed: March 31, 2023). </p>
-            <p>Marvel - Avengers: Endgame I am iron man glow pop! vinyl figure - toys ... (no date). Available at: https://www.ebgames.com.au/product/toys-and-collectibles/256559-marvel-avengers-endgame-i-am-iron-man-glow-pop-vinyl-figure (Accessed: March 31, 2023). </p>
-        </p>
+            <p>Funko pop marvel figurine checklist (2023) Hero Habit. Available at:
+                https://herohabit.com/funko-pop-marvel/ (Accessed: March 31, 2023). </p>
+            <p>Pin on mobile wallpapers (2019) Pinterest. Available at: https://pin.it/1EYSW7h (Accessed: March 31,
+                2023). </p>
+            <p>She-hulk: Attorney at Law (2022) - hulk pop! vinyl figure #1130 (no date) I'm Rick James Bricks.
+                Available at:
+                https://imrickjamesbricks.com.au/products/she-hulk-attorney-at-law-2022-hulk-pop-vinyl-figure-1130
+                (Accessed: March 31, 2023). </p>
+            <p>Pop funko marvel collector corps #481 avengers endgame captain america (no date) Amazon.com.au: Toys
+                &amp; Games. Available at:
+                https://www.amazon.com.au/POP-Collector-Avengers-Endgame-Captain/dp/B07ST4TP9L (Accessed: March 31,
+                2023). </p>
+            <p>Marvel - Avengers: Endgame I am iron man glow pop! vinyl figure - toys ... (no date). Available at:
+                https://www.ebgames.com.au/product/toys-and-collectibles/256559-marvel-avengers-endgame-i-am-iron-man-glow-pop-vinyl-figure
+                (Accessed: March 31, 2023). </p>
+            </p>
+        </div>
     </div>
-</div>
 
-<!-- Footer -->
-<footer id="footer">
-    <div class="footer-col">
-        <img src="./images/footerImage.png" alt="">
-    </div>
-    <div class="footer-col">
-        <ul id="list-menu">
-            <li class="footer-title">
-                <a href="./index.html">Home</a>
-            </li>
-            <li class="footer-title">
-                <a href="./archive.html">Archive</a>
-            </li>
-            <li class="footer-title">
-                <a href="./create.html">Create Post</a>
-            </li>
-            <li class="footer-title">
-                <a href="./about.html">About Us</a>
-            </li>
-        </ul>
-    </div>
-    <div class="footer-col-right">
-        <p class="footer-text">KIT202 Web Programming | Assignment 1</p>
-    </div>
-    <div class="footer-col-right">
-        <p class="footer-text">University of Tasmania</p>
-    </div>
-</footer>
-<button onclick="toTop()" id="toTopButton">To Top</button>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-col">
+            <img src="./images/footerImage.png" alt="">
+        </div>
+        <div class="footer-col">
+            <ul id="list-menu">
+                <li class="footer-title">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="footer-title">
+                    <a href="./archive.html">Archive</a>
+                </li>
+                <li class="footer-title">
+                    <a href="./create.html">Create Post</a>
+                </li>
+                <li class="footer-title">
+                    <a href="./about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-col-right">
+            <p class="footer-text">KIT202 Web Programming | Assignment 1</p>
+        </div>
+        <div class="footer-col-right">
+            <p class="footer-text">University of Tasmania</p>
+        </div>
+    </footer>
+    <button onclick="toTop()" id="toTopButton">To Top</button>
 </body>
-</html>
 
+</html>
