@@ -155,7 +155,8 @@ nav {
 
 /* Main content */
 #content {
-    padding-bottom: 5px;
+    padding-bottom: 0px;
+    height: 100%;
 }
 
 #content .content-section {
@@ -228,6 +229,7 @@ nav {
     position: relative;
     background-color: #fff;
     width: 100%;
+    bottom: 0px;
 }
 
 /*Login Form*/
