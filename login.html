@@ -7,8 +7,8 @@
     <meta name="author" content="Anh Quan Doan, Jonathan Charleston, Van Duc Anh Nguyen, Quang Khai Tran">
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" type="image/png" href="./images/MarvelLogo.png">
-    <script type="text/javascript" src="JavaScript.js" defer></script>
-    <script src="register.js" defer></script>
+    <script src="login.js" defer></script>
+    
 </head>
 
 <body>
@@ -53,42 +53,37 @@
 
 <!--  LOGIN FORM  -->
 <div class="LoginFormDiv">
-    <form  id="loginFormID" onsubmit="return validateForm()" method="post">
-        <h1>LOGIN</h1>
-
+    <h3>Enter your details below to login:</h3>
+    <p id = "error_message" style = "color: red;"></p>
+    <form name = "registrationForm" id = "registrationForm" novalidate>
+        
         <table>
             <tr>
-                <td><label for="uname"><b>Username</b></label></td>
-                <td><input id="uname" type="email" placeholder = "Enter here" name="uname"
-                        style="width: 180px;" required></td>
-            </tr>
+                <td><label class="form-label" for="uname">Username</label></td>
+                <td><input class ="form-control" type="text" id="uname" name="uname" required/></td>
 
-            <tr>
-                <td><label for="password_login"><b>Password</b></label></td>
-                <td><input id="password_login" type="password" placeholder="Enter Password" name="psw"
-                        style="width: 180px;" required></td>
             </tr>
             <tr>
-                <td><button type="submit" class="login_button" style="width: 80px;">
-                        <span style="text-overflow:ellipsis;">Login</span></button></td>
-
-                <td><a href="index.html" class="login_button"> Cancel/Back</a></td>
+                <td><label class="form-label" for="pass">Password</label></td>
+                <td><input class ="form-control" id="pass" type="password" name = "pass" required/></td>
+                
             </tr>
-            <tr>
-                <td><label>
-                        <input type="checkbox" checked="checked" name="remember">Remember me</label>
-                </td>
-            <tr>
-
-                <td><span style="background-color: white;"><a href="#">Forgot Password?</a></span></td>
-            </tr>
-        </table>
+        <tr>
+       <td><button id ="register_button" type="submit" class ="btn">Login</button></td>
+        
+       <td> <a id="cancel" href="index.html" class="btn"> Cancel/Back</a></td>
+    </tr>
+    <tr>
+        <td> <a id="register_page_button" href="register.html" class="btn"> Register</a></td>
+    </tr>
+    </table>
     </form>
+</div>
     <!-- Footer -->
     <div id="footer">
         <footer>KIT202 Web Programming | Assignment 1</footer>
     </div>
-</div>
+
 
 
 </body>

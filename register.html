@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" type="image/png" href="./images/MarvelLogo.png">
     <script src="register.js" defer></script>
-    <script type="text/javascript" src="JavaScript.js" defer></script>
+    
 </head>
 
 <body>
@@ -59,35 +59,39 @@
 
     <div class="LoginFormDiv">
         <h3>Enter your details below to register:</h3>
-    <form id = "register_form" name = "register_form" onsubmit="return validateForm()">
-        <div id = "form_container_register">
+        <p id = "error_message" style = "color: red;"></p>
+    <form name = "registrationForm" id = "registrationForm" novalidate>
+        
         <table>
             <tr>
-                <td><label class="form-label" for="uname">Username</label></td>
-                <td><input class ="form-control" type="text" id="uname" name = "uname" placeholder="xyz" required></td>
+                <td><label class="form-label" for="uname">Usename</label></td>
+                <td><input class ="form-control" type="text" id="uname" name="uname" required></td>
+                <td><span id="first-name-error" class="error"></span></td> 
+
             </tr>
             
-
             <tr>
                 <td><label class="form-label" for="email">Email</label></td>
-                <td><input class ="form-control"  type="email" id="email" name="email" placeholder="Enter valid email" required></td>
+                <td><input class ="form-control"  type="email" id="email" name="email" required></td>
+                <td><span id="email-error" class="error"></span></td>
             </tr>
 
             <tr>
                 <td><label class="form-label" for="pass">Password</label></td>
-                <td><input id = "pass" type="password" class="masked" name = "pass" placeholder= "Enter Password" required /></td>
+                <td><input class ="form-control" id="pass" type="password" name = "pass"  required /></td>
+                <td><span id="password-error" class="error"></span></td>
             </tr>
 
             <tr>
                 <td><label class="form-label" for="cpass">Comfirm Password</label></td>
-                <td><input id="cpass" name = "cpass" type="password" class="masked" placeholder= "Comfirm Password" required /></td>
+                <td><input class ="form-control" id="cpass" type="password" name = "cpass"  required /></td>
+                <td><span id="password-error" class="error"></span></td>
             </tr>
 
         </table>
-        <a href="index.html" class="login_button"> Register</a>
+        <button id ="register_button" type="submit" class ="btn">Register</button>
 
         <a id="cancel" href="index.html" class="btn"> Cancel/Back</a>
-    </div>
     </form>
 </div>
 <div id="footer">

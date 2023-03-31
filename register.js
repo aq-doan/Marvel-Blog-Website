@@ -1,4 +1,4 @@
-const form = document.querySelector("#register_form");
+const form = document.querySelector("#registrationForm");
 if (form) {
     form.addEventListener('submit', validateForm);
 }
@@ -6,42 +6,41 @@ if (form) {
 function validateForm(event) {
         
         const userName = form.elements['uname'].value;
-        const lastName = form.elements['lname'].value;
-        const eventField = form.elements['race'].value;
-        const ageGroup = form.elements['age_group'].value;
         const email = form.elements['email'].value;
         const password = form.elements['pass'].value;
         const confirmPassword = form.elements['cpass'].value;
         const errorMsg = document.getElementById("error_message");
-
-        // First name validation
-        if (firstName == "") {
-          errorMsg.textContent = "Please enter your first name";
+        
+        const colorUserName = document.getElementById('uname');
+        const colorEmail = document.getElementById('email');
+        const colorConfirmPassword = document.getElementById('cpass');
+        const colorPassword = document.getElementById('pass');
+        if (userName == "") {
+            colorUserName.style.backgroundColor = '#FFC0CB'
+          errorMsg.textContent = "Please enter your username";
           event.preventDefault();
-        }else if (lastName == "") {
-          errorMsg.textContent = "Please enter your last name";
-          event.preventDefault();
-        } else if (eventField == "") {
-          errorMsg.textContent = "Please select an event to participate in";
-          event.preventDefault();
-        } else if (ageGroup == "") {
-          errorMsg.textContent = "Please select your age group";
-         
-          event.preventDefault();
-        } else if (email == null) {
-         
+        
+        } else if (email == "") {
+            colorEmail.style.backgroundColor = '#FFC0CB'
           errorMsg.textContent = "Please enter your email";
           
           event.preventDefault();
-        }else if (password == "" || confirmPassword == "") {
+        } else if (password == "" || confirmPassword == "") {
           
           errorMsg.textContent = "Please enter a password in both fields";
-          
+          colorConfirmPassword.style.backgroundColor = '#FFC0CB';
+          colorPassword.style.backgroundColor = '#FFC0CB'
           event.preventDefault();
         } else if(password !== confirmPassword) {
-         
+            colorConfirmPassword.style.backgroundColor = '#FFC0CB';
           errorMsg.textContent = "Passwords do not match";
          
           event.preventDefault();
+        }else {
+            event.preventDefault(); // prevent default form submission
+             window.location.replace("./index.html");
         }
-      }
+        }
+      
+      
+    

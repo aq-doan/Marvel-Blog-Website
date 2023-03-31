@@ -88,3 +88,4 @@ function displaySlide(num) {
     }
     slide[numSlide - 1].style.display = "block";
 }
+
