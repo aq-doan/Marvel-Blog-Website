@@ -229,11 +229,50 @@ nav {
 }
 
 /* Footer */
-#footer {
-    position: relative;
-    background-color: #fff;
+footer {
+    padding: 60px 16px;
     width: 100%;
-    bottom: 0px;
+    height: 220px;
+    background-color: #383737;
+    color: white;
+    text-align: center;
+}
+
+footer .footer-col {
+    float: left;
+    padding: 0 48px;
+}
+
+footer .footer-col-right {
+    padding: 2px 48px;
+    text-align: right;
+}
+
+footer img {
+    width: 128px;
+    height: auto;
+}
+
+footer #list-menu {
+    list-style-type: none;
+    text-align: left;
+}
+
+footer .footer-title {
+    padding: 2px 0;
+}
+
+.footer-title a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 0;
+}
+
+.footer-title a:hover {
+    color: rgb(237, 29, 36);
+    text-shadow: 2px 2px #555;
 }
 
 /*Login Form*/
