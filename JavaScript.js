@@ -37,7 +37,7 @@ function hideContent(initiator) {
 let topButton = document.getElementById("toTopButton");
 
 window.onscroll = function () {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (window.pageYOffset > 300) {
         topButton.style.display = "block";
     } else {
         topButton.style.display = "none";
