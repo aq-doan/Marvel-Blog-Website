@@ -479,3 +479,12 @@ button[type="submit"]:hover {
 
 }
 
+.desc p {
+    margin: 2em;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
