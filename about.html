@@ -90,9 +90,41 @@
     </div>
     <div class="item">
         <p>Explain your group’s password policy for new user registration.</p>
+        <p>For our group password policy, we decide to implement a policy where the minimium 
+            characters requirement is 5 with the combination of at least 1 uppercase, 1 lowercase,
+            and 1 number digit. This can be further complicated if adding special symbols to our policy
+            by adding it to the testing library of the password. However, since the website is in 
+            prototype phrase, we decided to use that above combination for the purpose of testing before making it 
+            more complex for password security reason. 
+
+            The validation field function js file for the login page and registration page is separated 
+            from the rest of the pages in order to minimise conflict between the execution of codes. </p>
+            from the rest of the pages in order to minimise conflict between the execution of codes. Within the
+            registration.js file, function to reset the form, validating is implemented where there are event 
+            listener to run the function when buttons are clicked by the users. Within the validation function, there should
+            be a series of if-else statement for validating each input. Validating against the password policy locates at the end after
+            comfirm password and password is validated to not be empty and to be identical to each other. Then the password is examined 
+            by the policy, if not satified, red background of the input field will appear with an error message to 
+            depict that the password does not satisfy the password policy. 
+
+            The value of the password is accessed using DOM, then it is tested using the test() function against 
+            passPolicy = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[0-9a-zA-Z]{5,}$/. The test() function will return true or false (true for 
+            meeting the requirement and vice versa). The result of the test function is stored in a new variable. When the last validation 
+            steps occures, if false is passed in to the if-statement, then the error message will be displayed, otherwise it
+            meets the requirment and return back to home page. </p>
     </div>
     <div class="item">
         <p>Explain how your group decided to handle new user registration.</p>
+        <p>We decided to redirect the user to the register page instead of doing this dynamically. The user can access the 
+            registration page by click on the navigation section bar, footer, or through a button on the login page if they are not registered.
+
+            The reason for this method is due to ease of implementing the the html and js files for login and register page. Although similar implementation
+            code is applied, separating the code for both make it better for debugging and implementing. 
+
+            If doing this dynamically, it would create a complicated login/register page where in the event of unessary error occur, it would complicate the 
+            debug process. In addition, having a register page locate somewhere visually allow the user to go direct to that page if they are new, hence,
+            improving their experience of using the page instead of having go to the login page to find the register function.
+        </p>
     </div>
     <div class="item">
         <p>Describe, in detail, the embellishment/s your group incorporated beyond the core specifications.</p>
