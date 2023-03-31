@@ -8,77 +8,77 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" type="image/png" href="./images/MarvelLogo.png">
     <script src="login.js" defer></script>
-    
+
 </head>
 
 <body>
-<!-- Header -->
-<header class="header" id="navigation_header">
+    <!-- Header -->
+    <header class="header" id="navigation_header">
 
-    <!-- Site navigation  -->
-    <img class = "img-header" src="./images/wp2068895.jpg" alt="">
-    <div id="container_nav_header">
-        <nav class="navbar container" style="position: relative;">
+        <!-- Site navigation  -->
+        <img class="img-header" src="./images/wp2068895.jpg" alt="">
+        <div id="container_nav_header">
+            <nav class="navbar container" style="position: relative;">
 
-            <!-- Site navigation  -->
-            <div class="navigation" id="menu">
-                <ul class="navigation_list">
-                    <li class="navigation_li">
-                        <img src="./images/MarvelLogo.png"  id="logo" alt="logoIMG" />
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./index.html" class="navigation_link_list">Home</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./archive.html" class="navigation_link_list">Archive</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./create.html" class="navigation_link_list">Create Post</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./about.html" class="navigation_link_list">About Us</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./login.html" class="active_navigation_link">Login</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./register.html" class="navigation_link_list" >Register</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <!-- Site navigation  -->
+                <div class="navigation" id="menu">
+                    <ul class="navigation_list">
+                        <li class="navigation_li">
+                            <img src="./images/MarvelLogo.png" id="logo" alt="logoIMG" />
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./index.html" class="navigation_link_list">Home</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./archive.html" class="navigation_link_list">Archive</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./create.html" class="navigation_link_list">Create Post</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./about.html" class="navigation_link_list">About Us</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./login.html" class="active_navigation_link">Login</a>
+                        </li>
+                        <li class="navigation_li">
+                            <a href="./register.html" class="navigation_link_list">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <!--  LOGIN FORM  -->
+    <div class="LoginFormDiv">
+        <h3>Enter your details below to login:</h3>
+        <p id="error_message" style="color: red;"></p>
+        <form name="registrationForm" id="registrationForm" novalidate>
+
+            <table>
+                <tr>
+                    <td><label class="form-label" for="uname">Username</label></td>
+                    <td><input class="form-control" type="text" id="uname" name="uname" required /></td>
+
+                </tr>
+                <tr>
+                    <td><label class="form-label" for="pass">Password</label></td>
+                    <td><input class="form-control" id="pass" type="password" name="pass" required /></td>
+
+                </tr>
+                <tr>
+                    <td><button id="register_button" type="submit" class="btn">Login</button></td>
+
+                    <td> <a id="cancel" href="index.html" class="btn"> Cancel/Back</a></td>
+                </tr>
+                <tr>
+                    <td> <a id="register_page_button" href="register.html" class="btn"> Register</a></td>
+                </tr>
+            </table>
+        </form>
     </div>
-    
-</header>
-
-<!--  LOGIN FORM  -->
-<div class="LoginFormDiv">
-    <h3>Enter your details below to login:</h3>
-    <p id = "error_message" style = "color: red;"></p>
-    <form name = "registrationForm" id = "registrationForm" novalidate>
-        
-        <table>
-            <tr>
-                <td><label class="form-label" for="uname">Username</label></td>
-                <td><input class ="form-control" type="text" id="uname" name="uname" required/></td>
-
-            </tr>
-            <tr>
-                <td><label class="form-label" for="pass">Password</label></td>
-                <td><input class ="form-control" id="pass" type="password" name = "pass" required/></td>
-                
-            </tr>
-        <tr>
-       <td><button id ="register_button" type="submit" class ="btn">Login</button></td>
-        
-       <td> <a id="cancel" href="index.html" class="btn"> Cancel/Back</a></td>
-    </tr>
-    <tr>
-        <td> <a id="register_page_button" href="register.html" class="btn"> Register</a></td>
-    </tr>
-    </table>
-    </form>
-</div>
     <!-- Footer -->
     <div id="footer">
         <footer>KIT202 Web Programming | Assignment 1</footer>

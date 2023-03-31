@@ -8,95 +8,100 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" type="image/png" href="./images/MarvelLogo.png">
     <script src="register.js" defer></script>
-    
+
 </head>
 
 <body>
-    <div id = "main_register">
+    <div id="main_register">
         <div id="container_nav_header">
-<!-- Header -->
+            <!-- Header -->
 
-<header class="header" id="navigation_header">
+            <header class="header" id="navigation_header">
 
-    <!-- Site navigation  -->
+                <!-- Site navigation  -->
 
-        <img class = "img-header" src="./images/wp2068895.jpg" alt="">
-        <nav class="navbar container" style="position: relative;">
+                <img class="img-header" src="./images/wp2068895.jpg" alt="">
+                <nav class="navbar container" style="position: relative;">
 
-            <!-- Site navigation  -->
-            <div class="navigation" id="menu">
-                <ul class="navigation_list">
-                    <li class="navigation_li">
-                        <img src="./images/MarvelLogo.png"  id="logo" alt="logoIMG" />
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./index.html" class="navigation_link_list">Home</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./archive.html" class="navigation_link_list">Archive</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./create.html" class="navigation_link_list">Create Post</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./about.html" class="navigation_link_list">About Us</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./login.html" class="navigation_link_list">Login</a>
-                    </li>
-                    <li class="navigation_li">
-                        <a href="./register.html" class="active_navigation_link">Register</a>
-                    </li>
-                </ul>
-            </div>
-    
-    </nav>
-</header>
-</div>
+                    <!-- Site navigation  -->
+                    <div class="navigation" id="menu">
+                        <ul class="navigation_list">
+                            <li class="navigation_li">
+                                <img src="./images/MarvelLogo.png" id="logo" alt="logoIMG" />
+                            </li>
+                            <li class="navigation_li">
+                                <a href="./index.html" class="navigation_link_list">Home</a>
+                            </li>
+                            <li class="navigation_li">
+                                <a href="./archive.html" class="navigation_link_list">Archive</a>
+                            </li>
+                            <li class="navigation_li">
+                                <a href="./create.html" class="navigation_link_list">Create Post</a>
+                            </li>
+                            <li class="navigation_li">
+                                <a href="./about.html" class="navigation_link_list">About Us</a>
+                            </li>
+                            <li class="navigation_li">
+                                <a href="./login.html" class="navigation_link_list">Login</a>
+                            </li>
+                            <li class="navigation_li">
+                                <a href="./register.html" class="active_navigation_link">Register</a>
+                            </li>
+                        </ul>
+                    </div>
 
-
+                </nav>
+            </header>
+        </div>
 
 
-    <div class="LoginFormDiv">
-        <h3>Enter your details below to register:</h3>
-        <p id = "error_message" style = "color: red;"></p>
-    <form name = "registrationForm" id = "registrationForm" novalidate>
-        
-        <table>
-            <tr>
-                <td><label class="form-label" for="uname">Usename</label></td>
-                <td><input class ="form-control" type="text" id="uname" name="uname" required></td>
-                <td><span id="first-name-error" class="error"></span></td> 
 
-            </tr>
-            
-            <tr>
-                <td><label class="form-label" for="email">Email</label></td>
-                <td><input class ="form-control"  type="email" id="email" name="email" required></td>
-                <td><span id="email-error" class="error"></span></td>
-            </tr>
 
-            <tr>
-                <td><label class="form-label" for="pass">Password</label></td>
-                <td><input class ="form-control" id="pass" type="password" name = "pass"  required /></td>
-                <td><span id="password-error" class="error"></span></td>
-            </tr>
+        <div class="LoginFormDiv">
+            <h3>Enter your details below to register:</h3>
+            <p id="error_message" style="color: red;"></p>
+            <form name="registrationForm" id="registrationForm" novalidate>
 
-            <tr>
-                <td><label class="form-label" for="cpass">Comfirm Password</label></td>
-                <td><input class ="form-control" id="cpass" type="password" name = "cpass"  required /></td>
-                <td><span id="password-error" class="error"></span></td>
-            </tr>
+                <table>
+                    <tr>
+                        <td><label class="form-label" for="uname">Usename</label></td>
+                        <td><input class="form-control" type="text" id="uname" name="uname" required></td>
+                        <td><span id="first-name-error" class="error"></span></td>
 
-        </table>
-        <button id ="register_button" type="submit" class ="btn">Register</button>
+                    </tr>
 
-        <a id="cancel" href="index.html" class="btn"> Cancel/Back</a>
-    </form>
-</div>
-<div id="footer">
-    <footer>KIT202 Web Programming | Assignment 1</footer>
-</div>
+                    <tr>
+                        <td><label class="form-label" for="email">Email</label></td>
+                        <td><input class="form-control" type="email" id="email" name="email" required></td>
+                        <td><span id="email-error" class="error"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label class="form-label" for="pass">Password</label></td>
+                        <td><input class="form-control" id="pass" type="password" name="pass" required /></td>
+                        <td><span id="password-error" class="error"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label class="form-label" for="cpass">Comfirm Password</label></td>
+                        <td><input class="form-control" id="cpass" type="password" name="cpass" required /></td>
+                        <td><span id="password-error" class="error"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td><button id="register_button" type="submit" class="btn">Register</button></td>
+
+                        <td><a id="cancel" href="index.html" class="btn"> Cancel/Back</a></td>
+                    </tr>
+                    <tr>
+                        <td><button id="reset" type="reset" class="btn">Reset</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="footer">
+            <footer>KIT202 Web Programming | Assignment 1</footer>
+        </div>
     </div>
 </body>
 <button onclick="toTop()" id="toTopButton">To Top</button>
