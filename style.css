@@ -17,6 +17,10 @@ html {
     z-index: -1;
 }
 
+body {
+    background-color: #000;
+}
+
 /*The navigation bar  */
 #menu {
     position: fixed;
